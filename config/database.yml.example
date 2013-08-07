@@ -10,18 +10,18 @@ mysql: &mysql
 
 postgres: &postgres
   adapter: postgresql
-  host: localhost
+  host: ec2-54-221-204-17.compute-1.amazonaws.com
   port: 5432
-  username: postgres
-  password:
+  username: stfsbrdkgkujlq
+  password: JlSeij-SMu1cVlkhwtx8X2mdEm
   encoding: unicode
 
 # Comment the the mysql line and uncomment the postgres line
 # if you want to use postgres
 common: &common
   # Choose one of the following
-  <<: *mysql
-  #<<: *postgres
+  #<<: *mysql
+  <<: *postgres
 
   # Should match environment.sidekiq.concurrency
   #pool: 25
